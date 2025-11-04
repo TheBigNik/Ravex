@@ -1,0 +1,26 @@
+.popup-shell {
+  min-width: 320px;
+  min-height: 400px;
+  padding: var(--space-lg);
+  font-family: var(--font-ui);
+  background-color: var(--color-background);
+  color: var(--color-text-inverse);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  border-radius: var(--radius-md);
+}
+
+.popup-title {
+  font-family: var(--font-brand);
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--color-accent);
+}
+
+.popup-subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
