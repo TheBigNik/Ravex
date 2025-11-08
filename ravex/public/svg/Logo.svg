@@ -1,0 +1,18 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Colors: Royal Blue #0E34A0, Lime #CAFE48 -->
+  <g fill="none" stroke="#0E34A0" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Clipboard body -->
+    <rect x="44" y="60" width="168" height="168" rx="28"/>
+    <!-- Clipboard tab -->
+    <rect x="96" y="36" width="64" height="32" rx="12"/>
+    <!-- Inner R (monoline) -->
+    <path d="M104 112 H144
+             C158 112 168 122 168 136
+             C168 150 158 160 144 160
+             H104
+             M104 112 V192
+             M144 160 L172 192"/>
+  </g>
+  <!-- Lime star in the bowl of R -->
+  <path d="M132 134l6-14 6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#CAFE48"/>
+</svg>

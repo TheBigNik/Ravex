@@ -1,3 +1,17 @@
 {
-  "cSpell.words": ["crxjs", "ravex"]
+  "cSpell.words": [
+    "crxjs",
+    "ravex"
+  ],
+  "tailwindCSS.experimental.configFile": "ravex/tailwind.config.js",
+  "tailwindCSS.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html",
+    "javascript": "html",
+    "javascriptreact": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
