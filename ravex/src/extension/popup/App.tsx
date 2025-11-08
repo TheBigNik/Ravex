@@ -1,5 +1,5 @@
 import "./popup.css";
-import PrimeButton from "../../components/PrimeButton/PrimeButton";
+import RavexButton from "../../components/RavexButton/RavexButton";
 const PopupApp = () => {
   return (
     <div className="flex min-h-screen justify-center items-center">
@@ -15,9 +15,12 @@ const PopupApp = () => {
             <img src="/svg/Settings.svg" alt="settings" />
           </div>
         </div>
-        <div className="flex px-4 py-2">
-        <PrimeButton />
-        <PrimeButton />
+        <div className="flex flex-wrap w-full px-4 py-2 justify-between gap-y-3">
+          <div className="w-full relative left-1/2 transform -translate-x-1/2">
+            <RavexButton variant="primary" title="PASTE LATEST" icon="Paste" fullWidth />
+          </div>
+          <RavexButton variant="secondary" title="DELETE ALL" icon="Delete"/>
+          <RavexButton variant="secondary" title="FILTER TYPE" />
         </div>
       </div>
     </div>
