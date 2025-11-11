@@ -23,3 +23,7 @@ export interface RavexTagProps {
   tone?: 'neutral' | 'accent' | 'royal';
   onRemove?: () => void;
 }
+
+export interface SliderCategoryComponentProps {
+  children: ReactNode;
+}

@@ -1,5 +1,8 @@
 import "./popup.css";
-import RavexButton from "../../components/RavexButton/RavexButton";
+import RavexButton from "../../components/PopUp/RavexButton/RavexButton";
+import SliderCategoryComponent from "../../components/PopUp/CategoryCard/SliderCategoryComponent";
+import CategoryCard from "../../components/PopUp/CategoryCard/CategoryCard";
+import ItemCard from "../../components/PopUp/ItemCard/ItemCard";
 const PopupApp = () => {
   return (
     <div className="flex min-h-screen justify-center items-center">
@@ -17,11 +20,36 @@ const PopupApp = () => {
         </div>
         <div className="flex flex-wrap w-full px-4 py-2 justify-between gap-y-3">
           <div className="w-full relative left-1/2 transform -translate-x-1/2">
-            <RavexButton variant="primary" title="PASTE LATEST" icon="Paste" fullWidth />
+            <RavexButton
+              variant="primary"
+              title="PASTE LATEST"
+              icon="Paste"
+              fullWidth
+            />
           </div>
-          <RavexButton variant="secondary" title="DELETE ALL" icon="Delete"/>
+          <RavexButton variant="secondary" title="DELETE ALL" icon="Delete" />
           <RavexButton variant="secondary" title="FILTER TYPE" />
         </div>
+
+        <hr className="w-full border-zinc-800 mt-3" />
+
+        <SliderCategoryComponent>
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+        </SliderCategoryComponent>
+
+        <hr className="w-full border-zinc-800 mt-1" />
+
+        <div className="slider-scroll flex-col w-full items-stretch gap-3 overflow-y-auto p-4 scroll-smooth touch-pan-y snap-y snap-mandatory">
+          <ItemCard />
+        </div>
+
       </div>
     </div>
   );
